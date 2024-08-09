@@ -1,0 +1,253 @@
+/* Importing all the required fonts */
+
+/* JetBrains Mono */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Archivo */
+@font-face {
+    font-family: 'Archivo';
+    src: url(/assets/fonts/archivo/Archivo-Regular.eot),
+         url(/assets/fonts/archivo/Archivo-Regular.ttf) format('truetype'),
+         url(/assets/fonts/archivo/Archivo-Regular.woff) format('woff'),
+         url(/assets/fonts/archivo/Archivo-Regular.woff2) format('woff2');
+}
+
+/* Chillax */
+@font-face {
+    font-family: 'Chillax';
+    src: url(/assets/fonts/chillax/Chillax-Regular.eot),
+         url(/assets/fonts/chillax/Chillax-Regular.ttf) format('truetype'),
+         url(/assets/fonts/chillax/Chillax-Regular.woff) format('woff'),
+         url(/assets/fonts/chillax/Chillax-Regular.woff2) format('woff2');
+}
+
+:root {
+
+    /* Color Palette */
+    --color-white: #FFFFFF;
+    --color-light-gray: #E5E5E5;
+    --color-bg-gray: #C3C3C3;
+    --color-dark-gray: #7E7E7E;
+    --color-black: #1D1D1D;
+    --color-green: #2D5C43;
+    --color-purple: #393158;
+    --color-green-ocean: #2A5259;
+    --color-olive: #706947;
+
+    /* Typography */
+    font-family: 'JetBrains Mono';
+    --font-archivo: 'Archivo', sans-serif;
+    --font-chillax: 'Chillax', sans-serif;
+    --font-jetbrains-mono: 'JetBrains Mono', sans-serif;
+
+    /* Fonts size */
+    --text-xs: 0.75rem; /* 12px */
+    --text-sm: 0.875rem; /* 14px */
+    --text-base: 1rem; /* 16px */
+    --text-lg: 1.125rem; /* 18px */
+    --text-xl: 1.25rem; /* 20px */
+    --text-2xl: 1.5rem; /* 24px */
+    --text-3xl: 1.875rem; /* 30px */
+    --text-4xl: 2.25rem; /* 36px */
+    --text-5xl: 3rem; /* 48px */
+    --text-6xl: 3.75rem; /* 60px */
+    --text-7xl: 4.5rem; /* 72px */
+    --text-8xl: 6rem; /* 96px */
+    --text-9xl: 8rem; /* 128px */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: var(--color-light-gray);
+}
+
+body{
+    font-family: var(--font-jetbrains-mono);
+    font-size: var(--text-base);
+    font-weight: 400;
+    color: var(--color-white);
+}
+
+
+/******************************************* CRAFTING UI *******************************************/
+
+/**************************** HEADER ****************************/
+
+/**************************** HERO ****************************/
+
+/**************************** COLLECTION ****************************/
+
+/**************************** FOOTER  ****************************/
+
+footer {
+    background-color: var(--color-black);
+    padding: 26px 20px;
+}
+
+.footer-wrapper {
+    gap: 32px;
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-headline {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    gap: 20px;
+}
+
+.footer-logo {
+    width: 158px;
+    height: 36px;
+}
+
+.footer-subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    gap: 16px;
+}
+
+.footer-subscribe p {
+    font-family: var(--font-archivo);
+    font-size: var(--text-xs);
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: -0.48px;
+    color: var(--color-bg-gray);
+    width: 100%;
+    height: 32px;
+}
+
+.subscribe {
+    width: 100%;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.subscribe input {
+    width: 199px;
+    height: 44px;
+    background:none;
+    font-family: var(--font-archivo);
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 14px;
+    border-radius: 100px;
+    border: 1px solid var(--color-white);
+}
+
+.subscribe input::placeholder {
+    color: var(--color-white);
+}
+
+.subscribe button {
+    width: 128px;
+    height: 44px;
+    background-color: var(--color-white);
+    font-family: 'Archivo';
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--color-black);
+    line-height: 20px;
+    letter-spacing: -0.56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 12px 20px;
+    border-radius: 100px;
+}
+
+.footer-columns {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer-products, .footer-categories, .footer-social {
+    width: 98.33px;
+    height: 92px;
+    gap: 8px;
+}
+
+.footer-products h3, .footer-categories h3, .footer-social h3 {
+    color: var(--color-white);
+    font-family: var(--font-archivo);
+    font-size: var(--text-xs);
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: -0.48px;
+}
+
+.footer-products ul, .footer-categories ul, .footer-social ul {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.footer-products ul li a, .footer-categories ul li a, .footer-social ul li a{
+    color: var(--color-bg-gray);
+    font-family: var(--font-archivo);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: -0.4px;
+}
+
+.footer-bottom {
+    margin: 72px 0 8px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-bottom-wrapper {
+    width: 117px;
+    height: 12px;
+    align-content: center;
+    gap: 10px;
+}
+
+.footer-bottom-wrapper p {
+    color: var(--color-dark-gray);
+    font-family: Archivo;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: -0.4px;
+    white-space: nowrap;
+}
+
+/* RESPONSIVE DESIGN */
+
+/**************************** HEADER ****************************/
+
+/**************************** HERO ****************************/
+
+/**************************** COLLECTION ****************************/
+
+/**************************** FOOTER  ****************************/

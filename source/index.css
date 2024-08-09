@@ -83,7 +83,17 @@ body{
 
 /**************************** HEADER ****************************/
 
+header {
+    background-color: var(--color-black);
+    height: 72px;
+}
+
 /**************************** HERO ****************************/
+
+main {
+    background-color: var(--color-light-gray);
+    height: 200vh;
+}
 
 /**************************** COLLECTION ****************************/
 
@@ -162,6 +172,8 @@ footer {
 
 .subscribe input::placeholder {
     color: var(--color-white);
+    font-size: var(--text-xs);
+    line-height: 16px;
 }
 
 .subscribe button {
@@ -188,29 +200,34 @@ footer {
     gap: 20px;
 }
 
-.footer-products, .footer-categories, .footer-social {
-    width: 98.33px;
+.footer-column {
     height: 92px;
     gap: 8px;
 }
 
-.footer-products h3, .footer-categories h3, .footer-social h3 {
+.footer-column:last-child {
+    width: fit-content;
+}
+
+.footer-heading {
+    height: 24px;
     color: var(--color-white);
     font-family: var(--font-archivo);
     font-size: var(--text-xs);
     font-weight: 500;
     line-height: 16px;
     letter-spacing: -0.48px;
+    white-space: nowrap;
 }
 
-.footer-products ul, .footer-categories ul, .footer-social ul {
+.list-item {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     gap: 2px;
 }
 
-.footer-products ul li a, .footer-categories ul li a, .footer-social ul li a{
+.list-item-link {
     color: var(--color-bg-gray);
     font-family: var(--font-archivo);
     font-size: 10px;
@@ -220,13 +237,13 @@ footer {
 }
 
 .footer-bottom {
-    margin: 72px 0 8px 0;
+    margin-top: 72px;
     display: flex;
     justify-content: center;
 }
 
 .footer-bottom-wrapper {
-    width: 117px;
+    width: 140px;
     height: 12px;
     align-content: center;
     gap: 10px;
@@ -239,7 +256,10 @@ footer {
     font-weight: 400;
     line-height: 12px;
     letter-spacing: -0.4px;
-    white-space: nowrap;
+}
+
+#waris {
+    text-decoration: underline;
 }
 
 /* RESPONSIVE DESIGN */
@@ -251,3 +271,74 @@ footer {
 /**************************** COLLECTION ****************************/
 
 /**************************** FOOTER  ****************************/
+
+@media screen and (min-width: 768px) {
+    footer {
+        padding: 26px 46px;
+    }
+
+    .footer-headline {
+        width: 452px;
+    }
+
+    .footer-subscribe p {
+        font-size: var(--text-sm);
+    }
+
+    .subscribe input {
+        width: 316px;
+    }
+
+    .footer-columns {
+        gap: 52px;
+    }
+
+    .footer-column {
+        width: 68px;
+        height: 140px;
+    }
+
+    .footer-heading {
+        font-size: var(--text-base);
+    }
+
+    .list-item-link {
+        font-size: var(--text-sm);
+        line-height: 20px;
+    }
+
+    .footer-bottom {
+        margin-top: 36px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    footer {
+        padding-block: 36px;
+    }
+    
+    .footer-top {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width : 1440px) {
+    footer {
+        gap: 10px;
+        padding: 52px 120px;
+    }
+
+    .subscribe input {
+        width: 316px;
+    }
+
+    .footer-bottom-wrapper {
+        width: 140px;
+        height: 16px;
+    }
+
+    .footer-bottom-wrapper p {
+        width: 140px;
+        height: 16px;
+    }
+}

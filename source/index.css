@@ -95,6 +95,7 @@ body{
 .promo-banner p {
     font-size: 10px;
     font-weight: 400;
+    text-align: center;
     line-height: 12px;
     color: var(--color-white);
     letter-spacing: -0.4px;

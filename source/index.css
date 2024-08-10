@@ -81,17 +81,36 @@ body{
 
 /******************************************* CRAFTING UI *******************************************/
 
+/**************************** PROMO BANNER ****************************/
+
+.promo-banner {
+    background-color: var(--color-black);
+    gap: 10px;
+    padding: 16px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.promo-banner p {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    color: var(--color-white);
+    letter-spacing: -0.4px;
+}
+
 /**************************** HEADER ****************************/
 
 header {
-    background-color: var(--color-black);
+    background-color: var(--color-light-gray);
     height: 72px;
 }
 
 /**************************** HERO ****************************/
 
 main {
-    background-color: var(--color-light-gray);
+    background-color: var(--color-white);
     height: 200vh;
 }
 
@@ -264,15 +283,22 @@ footer {
 
 /* RESPONSIVE DESIGN */
 
+@media screen and (min-width: 768px) {
+
+/**************************** PROMO BANNER ****************************/
+
+.promo-banner p {
+    font-size: var(--text-sm);
+    line-height: 16px;
+}
+
 /**************************** HEADER ****************************/
 
 /**************************** HERO ****************************/
 
 /**************************** COLLECTION ****************************/
 
-/**************************** FOOTER  ****************************/
-
-@media screen and (min-width: 768px) {
+/**************************** FOOTER  ****************************/    
     footer {
         padding: 26px 46px;
     }
@@ -313,6 +339,19 @@ footer {
 }
 
 @media screen and (min-width:1024px) {
+/**************************** PROMO BANNER ****************************/
+
+.promo-banner p {
+    font-family: var(--font-archivo);
+}
+
+/**************************** HEADER ****************************/
+
+/**************************** HERO ****************************/
+
+/**************************** COLLECTION ****************************/
+
+/**************************** FOOTER  ****************************/    
     footer {
         padding-block: 36px;
     }
@@ -323,6 +362,14 @@ footer {
 }
 
 @media screen and (min-width : 1440px) {
+
+/**************************** HEADER ****************************/
+
+/**************************** HERO ****************************/
+
+/**************************** COLLECTION ****************************/
+
+/**************************** FOOTER  ****************************/    
     footer {
         gap: 10px;
         padding: 52px 120px;

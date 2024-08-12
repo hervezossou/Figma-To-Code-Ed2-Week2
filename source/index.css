@@ -112,17 +112,12 @@ header {
 
 /**************************** HERO ****************************/
 
-main {
-    background-color: var(--color-white);
-    height: 200vh;
-}
-
-.hero-section {
+.hero-section, .collection-section, .summer-fashion {
     padding: 26px 20px;
 }
 
 .hero-container {
-    background: url(/assets/images/jordan-jacket.png) no-repeat center center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), url(/assets/images/jordan-jacket.png) no-repeat center center;
     background-size: cover;
     width: auto;
     height: 372px;
@@ -246,7 +241,188 @@ main {
     align-self: stretch;
 }
 
+/**************************** SUMMER FASHION ****************************/
+
+.collection-intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.intro-heading {
+    flex: 1 0 0;
+    color: var(--color-black);
+    text-align: center;
+    font-family: var(--font-chillax);
+    font-size: var(--text-xl);
+    font-weight: 600;
+    line-height: 28px; /* 140% */
+    letter-spacing: -0.8px;
+}
+
+
+.product-card {
+    width: 322px;
+    height: 479px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.image-container {
+    display: flex;
+    width: 322.667px;
+    height: 405px;
+    padding: 18px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 32px;
+}
+
+.product-details {
+    display: flex;
+    display: flex;
+    width: 322.667px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+}
+
+.product-title {
+    color: var(--color-black);
+    font-family: var(--font-archivo);
+    font-size: var(--text-2xl);
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: -4%;
+}
+
+.product-price {
+    color: var(--color-dark-gray);
+    font-family: var(--font-archivo);
+    font-size: var(--text-xl);
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -4%;
+}
+
 /**************************** COLLECTION ****************************/
+
+.collection-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    align-self: stretch;
+    color: var(--color-black);
+}
+
+.collection-heading h2 {
+    text-align: center;
+    font-family: var(--font-chillax);
+    font-size: var(--text-2xl);
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: -4%;
+}
+
+.collection-heading p {
+    color: var(--color-dark-gray);
+    text-align: center;
+    font-family: var(--font-archivo);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -4%;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.men-collection {
+    background: url(/assets/images/blue-jacket.png) no-repeat center center;
+    background-size: cover;
+    border-radius: 32px;
+    width: 335px;
+    height: 446px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    margin-top: 36px;
+}
+
+.men-collection-heading {
+    color: transparent;
+    -webkit-text-stroke: 1.5px var(--color-white); /* Pour WebKit */
+    -moz-text-stroke: 1.5px var(--color-white); /* Pour Firefox */
+    font-family: var(--font-chillax);
+    font-size: var(--text-3xl);
+    font-weight: 700;
+    line-height: 36px; /* 120% */
+    letter-spacing: -4%;
+}
+
+.men-collection .paragraph{
+    color: var(--color-white);
+    text-align: center;
+    font-family: var(--font-archivo);
+    font-size: var(--text-sm);
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -4%;
+}
+
+.learn-more-card {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), url(/assets/images/tech-shacket.png) no-repeat center center;
+    background-size: cover;
+    border-radius: 32px;
+    width: 335px;
+    height: 446px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    margin-bottom: 36px;
+    position: relative;
+}
+
+.learn-more-btn {
+    background-color: var(--color-white);
+    border-radius: 52px;
+    display: flex;
+    width: 156px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px;
+    position: absolute;
+    right: 89px;
+    bottom: 24px;
+    font-family: var(--font-archivo);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--color-black);
+    text-decoration: none;
+    line-height: 20px;
+    letter-spacing: -4%;
+}
 
 /**************************** FOOTER  ****************************/
 
@@ -427,7 +603,7 @@ footer {
 /**************************** HEADER ****************************/
 
 /**************************** HERO ****************************/
-.hero-section {
+.hero-section, .collection-section {
     padding: 36px 46px;
 }
 
@@ -451,6 +627,24 @@ footer {
 }
 
 /**************************** COLLECTION ****************************/
+
+.card-container {
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 446px;
+    gap: 16px;
+    margin-top: 24px;
+    margin-bottom: 64px;
+}
+
+.men-collection-heading {
+    font-size: var(--text-3xl);
+    line-height: 36px;
+}
+
+.learn-more-card {
+    bottom: -36px;
+}
 
 /**************************** FOOTER  ****************************/    
     footer {
@@ -502,7 +696,7 @@ footer {
 /**************************** HEADER ****************************/
 
 /**************************** HERO ****************************/
-.hero-section {
+.hero-section, .collection-section {
     padding: 36px 46px;
 }
 
@@ -524,6 +718,20 @@ footer {
 
 /**************************** COLLECTION ****************************/
 
+.men-collection {
+    width: 675px;
+}
+
+.men-collection-heading {
+    font-size: var(--text-5xl);
+    line-height: 60px;
+}
+
+.paragraph {
+    font-size: var(--text-lg);
+    line-height: 28px;
+}
+
 /**************************** FOOTER  ****************************/    
     footer {
         padding-block: 36px;
@@ -539,7 +747,7 @@ footer {
 /**************************** HEADER ****************************/
 
 /**************************** HERO ****************************/
-.hero-section {
+.hero-section, .collection-section {
     padding: 52px 120px;
 }
 

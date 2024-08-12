@@ -41,6 +41,7 @@
     --font-jetbrains-mono: 'JetBrains Mono', sans-serif;
 
     /* Fonts size */
+    --text-small: 0.625rem; /* 10px */
     --text-xs: 0.75rem; /* 12px */
     --text-sm: 0.875rem; /* 14px */
     --text-base: 1rem; /* 16px */
@@ -49,6 +50,7 @@
     --text-2xl: 1.5rem; /* 24px */
     --text-3xl: 1.875rem; /* 30px */
     --text-4xl: 2.25rem; /* 36px */
+    --text-xxl: 2.625rem; /* 42px */
     --text-5xl: 3rem; /* 48px */
     --text-6xl: 3.75rem; /* 60px */
     --text-7xl: 4.5rem; /* 72px */
@@ -93,7 +95,7 @@ body{
 }
 
 .promo-banner p {
-    font-size: 10px;
+    font-size: var(--text-small);
     font-weight: 400;
     text-align: center;
     line-height: 12px;
@@ -113,6 +115,135 @@ header {
 main {
     background-color: var(--color-white);
     height: 200vh;
+}
+
+.hero-section {
+    padding: 26px 20px;
+}
+
+.hero-container {
+    background: url(/assets/images/jordan-jacket.png) no-repeat center center;
+    background-size: cover;
+    width: auto;
+    height: 372px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 42px 22px;
+    gap: 10px;
+    border-radius: 52px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 42px;
+}
+
+.hero-content-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    align-self: stretch;
+}
+
+.hero-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.rectangle {
+    width: 66px;
+    height: 0.5px;
+    background-color: var(--color-white);
+}
+
+.heading-text {
+    color: var(--color-white);
+    font-family: Archivo;
+    font-size: var(--text-small);
+    font-weight: 400;
+    line-height: 12px; 
+    letter-spacing: -0.4px;
+}
+
+.hero-text-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.hero-text-description h1 {
+    font-family: var(--font-chillax);
+    font-size: var(--text-3xl);
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-white);
+    line-height: 36px;
+    letter-spacing: -1.2px;
+}
+
+.hero-text-description p {
+    font-family: var(--font-archivo);
+    font-size: var(--text-sm);
+    font-weight: 400;
+    text-align: center;
+    color: var(--color-white);
+    line-height: 16px;
+    letter-spacing: -0.48px;
+}
+
+.hero-content-btn {
+    display: flex;
+    align-items: center;
+    gap: -1px;
+}
+
+.goto-shop {
+    display: flex;
+    width: 128px;
+    height: 44px;
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    border-radius: 100px;
+    background-color: var(--color-white);
+    text-decoration: none;
+    font-family: var(--font-archivo);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--color-black);
+    line-height: 20px;
+    letter-spacing: -0.56px;
+}
+
+.arrow-btn {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    border: none;
+    border-radius: 100px;
+    background-color: var(--color-white);
+}
+
+.arrow-btn a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
 }
 
 /**************************** COLLECTION ****************************/
@@ -272,7 +403,7 @@ footer {
 .footer-bottom-wrapper p {
     color: var(--color-dark-gray);
     font-family: Archivo;
-    font-size: 10px;
+    font-size: var(--text-small);
     font-weight: 400;
     line-height: 12px;
     letter-spacing: -0.4px;
@@ -296,6 +427,28 @@ footer {
 /**************************** HEADER ****************************/
 
 /**************************** HERO ****************************/
+.hero-section {
+    padding: 36px 46px;
+}
+
+.hero-container {
+    padding: 96px 78px;
+}
+
+.heading-text {
+    font-size: var(--text-sm);
+}
+
+.hero-text-description h1 {
+    font-size: var(--text-xxl);
+    line-height: 44px;
+    letter-spacing: -1.68px;
+}
+
+.hero-text-description p {
+    line-height: 20px;
+    letter-spacing: -4%;
+}
 
 /**************************** COLLECTION ****************************/
 
@@ -349,6 +502,25 @@ footer {
 /**************************** HEADER ****************************/
 
 /**************************** HERO ****************************/
+.hero-section {
+    padding: 36px 46px;
+}
+
+.hero-container {
+    padding: 96px 78px;
+}
+
+.heading-text {
+    font-size: var(--text-base);
+    letter-spacing: -4%;
+}
+
+.hero-text-description p {
+    width: 557px;
+    font-size: var(--text-base);
+    line-height: 24px;
+    letter-spacing: -4%;
+}
 
 /**************************** COLLECTION ****************************/
 
@@ -367,6 +539,15 @@ footer {
 /**************************** HEADER ****************************/
 
 /**************************** HERO ****************************/
+.hero-section {
+    padding: 52px 120px;
+}
+
+.hero-text-description h1 {
+    font-size: var(--text-5xl);
+    line-height: 60px;
+    letter-spacing: -4%;
+}
 
 /**************************** COLLECTION ****************************/
 

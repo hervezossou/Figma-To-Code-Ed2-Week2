@@ -192,7 +192,7 @@ li span {
 }
 
 .hero-container {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), url(../assets/images/jordan-jacket.png) no-repeat center center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), url(/assets/images/jordan-jacket.png) no-repeat center center;
     background-size: cover;
     width: auto;
     height: 372px;
@@ -505,7 +505,7 @@ li span {
 }
 
 .men-collection {
-    background: url(../assets/images/blue-jacket.png) no-repeat center center;
+    background: url(/assets/images/blue-jacket.png) no-repeat center center;
     background-size: cover;
     border-radius: 32px;
     width: 335px;
@@ -542,7 +542,7 @@ li span {
 }
 
 .learn-more-card {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), url(../assets/images/tech-shacket.png) no-repeat center center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), url(/assets/images/tech-shacket.png) no-repeat center center;
     background-size: cover;
     border-radius: 32px;
     width: 335px;

@@ -257,8 +257,66 @@ header {
     font-family: var(--font-chillax);
     font-size: var(--text-xl);
     font-weight: 600;
-    line-height: 28px; /* 140% */
-    letter-spacing: -0.8px;
+    line-height: 28px;
+    letter-spacing: -4%;
+}
+
+.summer-fashion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.summer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.categories-filter {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-block: 3rem;
+}
+
+.filter-btn {
+    width: fit-content;
+    height: 44px;
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1.5px var(--color-black) solid;
+    border-radius: 100px;
+    background-color: var(--color-white);
+    text-align: center;
+    color: var(--b-black, #1D1D1D);
+    font-family: var(--font-archivo);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -4%;
+}
+
+.filter-btn:first-child {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+/********************************* PRODUCTS CONTAINER **************************************/
+
+.products-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+    flex-wrap: wrap;
+    padding: 10px;
 }
 
 
@@ -285,8 +343,8 @@ header {
 
 .product-details {
     display: flex;
-    display: flex;
     width: 322.667px;
+    height: 62px;
     flex-direction: column;
     align-items: flex-start;
     gap: 2px;
@@ -299,6 +357,7 @@ header {
     font-weight: 600;
     line-height: 32px;
     letter-spacing: -4%;
+    text-transform: uppercase;
 }
 
 .product-price {
@@ -310,6 +369,27 @@ header {
     letter-spacing: -4%;
 }
 
+.view-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    gap: 20px;
+    width: 128px;
+    height: 44px;
+    border: 1px var(--color-black) solid;
+    border-radius: 100px;
+    text-decoration: none;
+    color: var(--color-black);
+    font-family: var(--font-archivo);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: -4%;
+    margin-top: 42px;
+    
+}
+
 /**************************** COLLECTION ****************************/
 
 .collection-heading {
@@ -318,7 +398,6 @@ header {
     align-items: center;
     gap: 4px;
     align-self: stretch;
-    color: var(--color-black);
 }
 
 .collection-heading h2 {
@@ -326,8 +405,10 @@ header {
     font-family: var(--font-chillax);
     font-size: var(--text-2xl);
     font-weight: 600;
+    color: var(--color-black);
     line-height: 32px;
     letter-spacing: -4%;
+    text-transform: uppercase;
 }
 
 .collection-heading p {
@@ -626,6 +707,28 @@ footer {
     letter-spacing: -4%;
 }
 
+/**************************** PRODUCT CARD CONTAINER ***********************/
+
+.summer-fashion {
+    padding: 26px 36px;
+}
+
+.intro-heading {
+    font-size: var(--text-2xl);
+    line-height: 32px;
+}
+
+.categories-filter {
+    align-items: center;
+    justify-content: center;
+}
+
+.products-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 /**************************** COLLECTION ****************************/
 
 .card-container {
@@ -716,6 +819,17 @@ footer {
     letter-spacing: -4%;
 }
 
+/**************************** PRODUCT CARD CONTAINER ***********************/
+
+.summer-fashion {
+    padding-block: 36px;
+}
+
+.intro-heading {
+    font-size: var(--text-3xl);
+    line-height: 36px;
+}
+
 /**************************** COLLECTION ****************************/
 
 .men-collection {
@@ -758,6 +872,15 @@ footer {
 }
 
 /**************************** COLLECTION ****************************/
+
+.summer-fashion {
+    padding: 52px 120px;
+}
+
+.intro-heading {
+    font-size: var(--text-3xl);
+    line-height: 36px;
+}
 
 /**************************** FOOTER  ****************************/    
     footer {

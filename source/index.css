@@ -192,7 +192,7 @@ li span {
 }
 
 .hero-container {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), url(/assets/images/jordan-jacket.png) no-repeat center center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), url(../assets/images/jordan-jacket.png) no-repeat center center;
     background-size: cover;
     width: auto;
     height: 372px;

@@ -8,6 +8,7 @@ const mobileMenuNav = document.querySelector('.mobile-menu-nav')
 const mobileMenu = document.querySelector('.mobile-menu')
 
 // Build toggleMenu function
+
 function toggleMenu () {
   openMenuButton.classList.toggle('is-hidden')
   closeMenuButton.classList.toggle('is-hidden')
@@ -15,15 +16,20 @@ function toggleMenu () {
 }
 
 // Use toggleMenu to switch between open and close menu
+
 openMenuButton.addEventListener('click', toggleMenu)
 closeMenuButton.addEventListener('click', toggleMenu)
 
 // Hidding the mobile menu nav when user click outside the menu
+
 document.onclick = function(e) {
-  if(!openMenuButton.contains(e.target) && !closeMenuButton.contains(e.target) && !mobileMenuNav.contains(e.target)) {
+  if(mobileMenuNav.classList.contains('is-active') && 
+      !openMenuButton.contains(e.target) &&
+      !closeMenuButton.contains(e.target) &&
+      !mobileMenuNav.contains(e.target)) {
     openMenuButton.classList.toggle('is-hidden')
     closeMenuButton.classList.toggle('is-hidden')
-    mobileMenuNav.classList.toggle('is-active')
+    mobileMenuNav.classList.remove('is-active')
   }
 }
 

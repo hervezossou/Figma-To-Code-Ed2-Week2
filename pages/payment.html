@@ -3,15 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
-    <link rel="stylesheet" href="/source/index.css">
-    <link rel="stylesheet" href="/source/styles/cart.css">
+    <title>Payment</title>
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../styles/payment.css">
 </head>
 <body>
     <section class="promo-banner">
         <p>Sign up and get 20% off for all new arrivals collections</p>
     </section>
-    <header></header>
+    <header>
+        <nav class="desktop-nav">
+            <ul class="nav-left">
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Collection</a></li>
+            </ul>
+            <div class="logo">
+                <img src="/assets/icons/logo-dark.svg" alt="logo">
+            </div>
+            <ul class="nav-right">
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#" class="user-account"><img src="/assets/icons/user.svg" alt="user account">Account</a></li>
+                <li><a href="#">Cart(0)</a></li>
+                <li><img src="/assets/icons/search.svg" alt="search"></li>
+            </ul>
+        </nav>
+        <div class="mobile-nav">
+            <div class="mobile-menu-header">
+                <div class="menu-btn">
+                    <img src="/assets/icons/open-menu.svg" id="open-menu" alt="menu button">
+                    <img src="/assets/icons/close-icon.svg" id="close-menu" class="is-hidden" alt="close button">
+                </div>
+                <div class="logo">
+                    <img src="/assets/icons/logo-dark.svg" alt="logo">
+                </div>
+                <div class="menu-right">
+                    <li><img src="/assets/icons/search.svg" alt="search"></li>
+                    <li><img src="/assets/icons/cart-basket.svg" alt="cart-basket"></li>
+                </div>
+            </div>
+            <nav class="mobile-menu-nav is-hidden">
+                <ul class="mobile-nav-list">
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Collection</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li class="user-account">
+                        <img src="/assets/icons/user.svg" alt="user account">
+                        <span>Account</span>
+                    </li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <main></main>
     <footer>
         <div class="footer-wrapper">
@@ -67,6 +117,5 @@
             </div>
         </div>
     </footer>
-    <script src="/source/index.js"></script>
 </body>
 </html>

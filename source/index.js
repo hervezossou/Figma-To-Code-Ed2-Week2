@@ -20,7 +20,7 @@ closeMenuButton.addEventListener('click', toggleMenu)
 
 // Hidding the mobile menu nav when user click outside the menu
 document.onclick = function(e) {
-  if(!openMenuButton.contains(e.target) && !mobileMenuNav.contains(e.target)) {
+  if(!openMenuButton.contains(e.target) && !closeMenuButton.contains(e.target) && !mobileMenuNav.contains(e.target)) {
     openMenuButton.classList.toggle('is-hidden')
     closeMenuButton.classList.toggle('is-hidden')
     mobileMenuNav.classList.toggle('is-active')

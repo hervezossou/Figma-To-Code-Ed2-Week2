@@ -105,9 +105,84 @@ body{
 
 /**************************** HEADER ****************************/
 
-header {
-    background-color: var(--color-light-gray);
-    height: 72px;
+.desktop-nav {
+    display: none;
+}
+
+.mobile-menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 50px;
+    height: 76px;
+}
+
+.menu-right {
+    display: flex;
+    align-items: center;
+    transform: translateY(-10px) translateX(-16px);
+    gap: 6px;
+    width: 52px;
+    height: 20px;
+}
+
+.mobile-menu-nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    z-index: 999;
+    transform: translateX(-100%);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.mobile-menu-nav.is-active {
+    transform: translateX(0);
+    margin-bottom: 128px;
+}
+
+.mobile-nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    height: 350px;
+}
+
+.mobile-nav-list li a {
+    color: var(--color-black);
+    font-family: var(--font-archivo);
+    font-size: var(--text-lg);
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -4%;
+}
+
+li span {
+    color: var(--color-black);
+    font-family: var(--font-archivo);
+    font-size: var(--text-lg);
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -4%;
+}
+
+.user-account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 6px;
+}
+
+.is-hidden {
+    display: none;
+}
+
+.is-active {
+    display: flex;
 }
 
 /**************************** HERO ****************************/
@@ -672,6 +747,12 @@ footer {
 
 /* RESPONSIVE DESIGN */
 
+@media screen and (min-width: 425px) {
+    .menu-right {
+        transform: translateX(-10px) translateY(-9px);
+    }
+}
+
 @media screen and (min-width: 768px) {
 
 /**************************** PROMO BANNER ****************************/
@@ -798,6 +879,58 @@ footer {
 
 /**************************** HEADER ****************************/
 
+.mobile-nav {
+    display: none;
+}
+
+header {
+    padding: 20px 46px;
+}
+
+.desktop-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 36px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 9px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 9px;
+    position: relative;
+}
+
+.nav-left li a, .nav-right li a {
+    color: var(--b-black, #1D1D1D);
+    font-family: var(--font-archivo);
+    font-size: var(--text-base);
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -4%;
+}
+
+.nav-left li a:hover, .nav-right li a:hover {
+    color: var(--color-green);
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.nav-right li:last-child img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 3.5px;
+}
+
 /**************************** HERO ****************************/
 .hero-section, .collection-section {
     padding: 36px 46px;
@@ -859,6 +992,22 @@ footer {
 @media screen and (min-width : 1440px) {
 
 /**************************** HEADER ****************************/
+
+header {
+    padding: 20px 120px;
+}
+
+.desktop-nav {
+    gap: 50px;
+}
+
+.nav-left {
+    gap: 18px;
+}
+
+.nav-right {
+    gap: 18px;
+}
 
 /**************************** HERO ****************************/
 .hero-section, .collection-section {

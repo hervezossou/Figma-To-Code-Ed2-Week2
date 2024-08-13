@@ -1,3 +1,33 @@
+/* Navigation Menu Toggle */
+
+// We get all elements to toggle
+
+const openMenuButton = document.getElementById('open-menu')
+const closeMenuButton = document.getElementById('close-menu')
+const mobileMenuNav = document.querySelector('.mobile-menu-nav')
+const mobileMenu = document.querySelector('.mobile-menu')
+
+// Build toggleMenu function
+function toggleMenu () {
+  openMenuButton.classList.toggle('is-hidden')
+  closeMenuButton.classList.toggle('is-hidden')
+  mobileMenuNav.classList.toggle('is-active')
+}
+
+// Use toggleMenu to switch between open and close menu
+openMenuButton.addEventListener('click', toggleMenu)
+closeMenuButton.addEventListener('click', toggleMenu)
+
+// Hidding the mobile menu nav when user click outside the menu
+document.onclick = function(e) {
+  if(!openMenuButton.contains(e.target) && !mobileMenuNav.contains(e.target)) {
+    openMenuButton.classList.toggle('is-hidden')
+    closeMenuButton.classList.toggle('is-hidden')
+    mobileMenuNav.classList.toggle('is-active')
+  }
+}
+
+/* Getting Full Year for footer bOttom */
 document.getElementById('year').textContent = new Date().getFullYear()
 
 /* Data Fetchning Function */

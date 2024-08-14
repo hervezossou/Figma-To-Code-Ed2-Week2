@@ -4,22 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Archivo */
-@font-face {
-    font-family: 'Archivo';
-    src: url(/assets/fonts/archivo/Archivo-Regular.eot),
-         url(/assets/fonts/archivo/Archivo-Regular.ttf) format('truetype'),
-         url(/assets/fonts/archivo/Archivo-Regular.woff) format('woff'),
-         url(/assets/fonts/archivo/Archivo-Regular.woff2) format('woff2');
-}
+@import url("https://api.fontshare.com/v2/css?f[]=archivo@400,500,600,700,800,900&display=swap");
 
 /* Chillax */
-@font-face {
-    font-family: 'Chillax';
-    src: url(/assets/fonts/chillax/Chillax-Regular.eot),
-         url(/assets/fonts/chillax/Chillax-Regular.ttf) format('truetype'),
-         url(/assets/fonts/chillax/Chillax-Regular.woff) format('woff'),
-         url(/assets/fonts/chillax/Chillax-Regular.woff2) format('woff2');
-}
+@import url("https://api.fontshare.com/v2/css?f[]=chillax@400,500,600,700&display=swap");
 
 :root {
 
@@ -35,7 +23,6 @@
     --color-olive: #706947;
 
     /* Typography */
-    font-family: 'JetBrains Mono';
     --font-archivo: 'Archivo', sans-serif;
     --font-chillax: 'Chillax', sans-serif;
     --font-jetbrains-mono: 'JetBrains Mono', sans-serif;

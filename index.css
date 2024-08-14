@@ -662,6 +662,7 @@ footer {
     gap: 6px;
     padding: 12px 20px;
     border-radius: 100px;
+    border: none;
 }
 
 .footer-columns {

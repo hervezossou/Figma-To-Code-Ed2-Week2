@@ -16,7 +16,7 @@
 ## Running Locally
 
 ```bash
-$ git clone https://github.com/hervenzoghe/Figma-To-Code-Ed2-Week2.git
+$ git clone https://github.com/hervezossou/Figma-To-Code-Ed2-Week2.git
 $ cd Figma-To-Code-Ed2-Week2
 ```
 
